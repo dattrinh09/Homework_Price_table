@@ -24,8 +24,27 @@ html, body{
 .item-row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+.item-row::after{
+    content: '';
+    flex: 0 400px;
+}
+
+.row-1{
+    width: 40%;
+    margin-right: 10px;
+    height: 20%;
+    background-color: #2195f7;
+}
+
+.row-2{
+    width: 40%;
+    margin-right: 10px;
+    height: 20%;
+    background-color: #2195f7;
 }
 
 
@@ -36,7 +55,7 @@ html, body{
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
-    align-items: center;
+    width: 362px;
 }
 
 .item-price{
@@ -96,9 +115,9 @@ html, body{
 
 /* Header */
 .item .item-image{
-    width: 362px;
     height: 270px;
     display: flex;
+    width: 100%;
 }
 
 .item-blue .item-image{
